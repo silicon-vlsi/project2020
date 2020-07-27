@@ -29,4 +29,5 @@ export PATH=$PATH:<PATH-TO-REPO>/project2020/eda/ngspice-32/glnxa64/bin
    ├── Desktop
    |    ├── myLab	[Your work dir	]
    ├─ OpenRAM		[Git repo for OpenRAM, DO NOT work in this dir]
+   ├─ OpenSTA		[Git repo for OpenSTA, DO NOT work in this dir]
 ```

@@ -1,8 +1,8 @@
 # Table of Contents 
 - [Overview](#Overview)
 - [Install/Setup](#Installation-Setup)
-    - [Cloning the Repo](##Cloning-the-Repository)
-    - [Setting the Environment Variables](##Setting-the-Environment-Variables)
+    - [Cloning the Repo](#Cloning-the-Repository)
+    - [Setting the Environment Variables](#Setting-the-Environment-Variables)
     - [Suggested Directory Structure](#Suggested-Directory-Structure)
 
 # Overview

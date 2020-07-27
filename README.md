@@ -24,7 +24,7 @@ export PATH=$PATH:<PATH-TO-REPO>/project2020/eda/ngspice-32/glnxa64/bin
 
 ## Suggested Directory Structure
 ```bash
-<HOME_DIR>
+<HOME_DIR> [eg. /home/vlsi]
    ├── project2020	[Git repo, DO NOT  work in this Dir]
    ├── Desktop
    |    ├── myLab	[Your work dir	]

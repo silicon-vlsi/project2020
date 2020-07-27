@@ -4,6 +4,7 @@
     - [Cloning the Repo](#Cloning-the-Repository)
     - [Setting the Environment Variables](#Setting-the-Environment-Variables)
     - [Suggested Directory Structure](#Suggested-Directory-Structure)
+- [OpenRAM](#OpenRAM)
 
 # Overview
 
@@ -31,3 +32,5 @@ export PATH=$PATH:<PATH-TO-REPO>/project2020/eda/ngspice-32/glnxa64/bin
    ├─ OpenRAM		[Git repo for OpenRAM, DO NOT work in this dir]
    ├─ OpenSTA		[Git repo for OpenSTA, DO NOT work in this dir]
 ```
+# OpenRAM
+OpenRAM is an open-source memory compiler from UCSC. [Homepage](https://openram.soe.ucsc.edu/)

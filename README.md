@@ -33,4 +33,13 @@ export PATH=$PATH:<PATH-TO-REPO>/project2020/eda/ngspice-32/glnxa64/bin
    ├─ OpenSTA		[Git repo for OpenSTA, DO NOT work in this dir]
 ```
 # OpenRAM
-OpenRAM is an open-source memory compiler from UCSC. [Homepage](https://openram.soe.ucsc.edu/)
+[OpenRAM] is an award winning open-source Python framework to create the layout, netlists, timing and power models, placement and routing models, and other views necessary to use SRAMs in ASIC design. 
+- Find the project on [GitHub][OpenRAMgit] with documentation to get started
+- Read the [ICCAD Paper][openRAMpaper]
+
+
+* * *
+
+[OpenRAM]:              https://openram.soe.ucsc.edu/
+[OpenRAMgit]:           https://github.com/VLSIDA/OpenRAM 
+[OpenRAMpaper]:         https://ieeexplore.ieee.org/document/7827670/

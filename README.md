@@ -34,7 +34,7 @@ export PATH=$PATH:<PATH-TO-REPO>/project2020/eda/ngspice-32/glnxa64/bin
 ```
 
 # NGSpice
-[NGSpice] is a open source spice simulator for electric and electronic circuits. After cloning this repo, a precompiled version (compiled in 64-bit LXLE/Ubuntu) will be available in '<PATH-TO-REPO>/project2020/eda/ngspice-32'
+[NGSpice] is a open source spice simulator for electric and electronic circuits. After cloning this repo, a precompiled version (compiled in 64-bit LXLE/Ubuntu) will be available in `<PATH-TO-REPO>/project2020/eda/ngspice-32`
 
 # OpenRAM
 [OpenRAM] is an award winning open-source Python framework to create the layout, netlists, timing and power models, placement and routing models, and other views necessary to use SRAMs in ASIC design.
@@ -44,10 +44,10 @@ export PATH=$PATH:<PATH-TO-REPO>/project2020/eda/ngspice-32/glnxa64/bin
 - For this project we will use the [SCMOS] technology, a scalable 0.5u CMOS technology.
 
 # Tasks
-[x] Install LXLE on Virtual Box
-[x] Compile ngspice-32 on LXLE and add to the repo.
-[x] Add the [SCMOS] spice models to the ngspice directory.
-[ ] Add a NGSpice section with a quickstart guide to this README
+- [x] Install LXLE on Virtual Box
+- [x] Compile ngspice-32 on LXLE and add to the repo.
+- [x] Add the [SCMOS] spice models to the ngspice directory.
+- [ ] Add a NGSpice section with a quickstart guide to this README
 
 * * *
 

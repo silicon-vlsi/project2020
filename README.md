@@ -33,6 +33,21 @@ export  PATH=$PATH:$SPICE_EXEC_DIR
 ```
 There is a initialization script in `$SPICE_LIB_DIR/scripts/spinit`. You can overwrite any of the initilization by adding commands to a local `~/.spiceinit` .
 
+## Getting Started
+You can open a text editor create a *netlist* of the intended circuit for example of a voltage divider as shown below (say filename `divider.sp`):
+```spice
+First line in ngspice is always the title line
+* This is a comment line
+Vbat    vin     0       DC 5
+R1      vin     vout    1k
+R2      vout    0       1k
+
+.control
+tran 0.1u 1u
+.endc
+
+.end
+```
 
 # OpenRAM
 [OpenRAM] is an award winning open-source Python framework to create the layout, netlists, timing and power models, placement and routing models, and other views necessary to use SRAMs in ASIC design.

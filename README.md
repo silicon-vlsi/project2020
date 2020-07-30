@@ -25,15 +25,33 @@ git clone https://www.github.com/silicon-vlsi/project2020
 ```
 
 # NGSpice
-[NGSpice] is a open source spice simulator for electric and electronic circuits. After cloning this repo, a precompiled version (compiled in 64-bit LXLE/Ubuntu) will be available in `<PATH-TO-REPO>/project2020/eda/ngspice-32`. Add the following environment variables in your `~/.bashrc`
+[NGSpice] is a open source spice simulator for electric and electronic circuits. 
+- [NGSpice Reference Manual][NGSpiceMan]: Comple reference manual in HTML format.
+
+After cloning this repo, a precompiled version (compiled in 64-bit LXLE/Ubuntu) will be available in `<PATH-TO-REPO>/project2020/eda/ngspice-32`. Add the following environment variables in your `~/.bashrc`
 ```bash
 export  SPICE_LIB_DIR=$HOME/projects/project2020/eda/ngspice-32/glnxa64/share/ngspice
 export  SPICE_EXEC_DIR=$HOME/projects/project2020/eda/ngspice-32/glnxa64/bin
 export  PATH=$PATH:$SPICE_EXEC_DIR
 ```
 There is a initialization script in `$SPICE_LIB_DIR/scripts/spinit`. You can overwrite any of the initilization by adding commands to a local `~/.spiceinit` .
+The directory stucture:
+```bash
+project2020/eda/ngspice-32
+├── doc
+│   └── ngspice-32-manual.pdf  (Complete Reference)
+├── examples                   (Lots of Spice examples)
+├── glnxa64
+│   ├── bin
+│   ├── include
+│   └── share
+│       ├── man
+│       └── ngspice
+│           └── scripts        (Scripts, including startup spinit)
+└── models                     (Spice models)
+```
 
-## Getting Started
+## Quick Start Guide
 You can open a text editor create a *netlist* of the intended circuit for example of a voltage divider as shown below (say filename `divider.sp`):
 ```spice
 First line in ngspice is always the title line
@@ -84,4 +102,5 @@ And to quit simply type `quit`.
 [OpenRAMpaper]:         https://ieeexplore.ieee.org/document/7827670/
 [SCMOS]:                https://www.mosis.com/files/scmos/scmos.pdf
 [NGSpice]:              http://ngspice.sourceforge.net
+[NGSpiceMan]:           http://ngspice.sourceforge.net/docs/ngspice-html-manual/manual.xhtml
 [Magic]:                http://opencircuitdesign.com/magic/

@@ -4,7 +4,9 @@
     - [Cloning the Repo](#Cloning-the-Repository)
     - [Setting the Environment Variables](#Setting-the-Environment-Variables)
     - [Suggested Directory Structure](#Suggested-Directory-Structure)
+- [NGSpice](#NGSpice)
 - [OpenRAM](#OpenRAM)
+- [Tasks](#Tasks)
 
 # Overview
 
@@ -34,7 +36,7 @@ export PATH=$PATH:<PATH-TO-REPO>/project2020/eda/ngspice-32/glnxa64/bin
 ```
 
 # NGSpice
-[NGSpice] is a open source spice simulator for electric and electronic circuits. After cloning this repo, a precompiled version (compiled in 64-bit LXLE/Ubuntu) will be available in `<PATH-TO-REPO>/project2020/eda/ngspice-32`
+[NGSpice] is a open source spice simulator for electric and electronic circuits. After cloning this repo, a precompiled version (compiled in 64-bit LXLE/Ubuntu) will be available in `<PATH-TO-REPO>/project2020/eda/ngspice-32`. Add the following environment variables
 
 # OpenRAM
 [OpenRAM] is an award winning open-source Python framework to create the layout, netlists, timing and power models, placement and routing models, and other views necessary to use SRAMs in ASIC design.
@@ -48,6 +50,8 @@ export PATH=$PATH:<PATH-TO-REPO>/project2020/eda/ngspice-32/glnxa64/bin
 - [x] Compile ngspice-32 on LXLE and add to the repo.
 - [x] Add the [SCMOS] spice models to the ngspice directory.
 - [ ] Add a NGSpice section with a quickstart guide to this README
+- [ ] Create a customized `Sue` schematic editor and add to repo.
+- [ ] Compile [Magic] in LXLE and add to the repo.
 
 * * *
 
@@ -56,3 +60,4 @@ export PATH=$PATH:<PATH-TO-REPO>/project2020/eda/ngspice-32/glnxa64/bin
 [OpenRAMpaper]:         https://ieeexplore.ieee.org/document/7827670/
 [SCMOS]:                https://www.mosis.com/files/scmos/scmos.pdf
 [NGSpice]:              http://ngspice.sourceforge.net
+[Magic]:                http://opencircuitdesign.com/magic/

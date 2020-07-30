@@ -48,6 +48,19 @@ tran 0.1u 1u
 
 .end
 ```
+Then start `ngspice` and source the netlist at the ngspice command prompt:
+```bash
+ngspice 1 -> source divider.sp
+```
+It should output the node voltages at the initial transient voltages. you can plot any of the nodes eg.:
+```bash
+ngspice 2 -> plot v(vout)
+```
+If you want to edit the file without leaving ngspice, simply type edit eg.
+```bash
+ngspice 3 -> edit
+```
+And to quit simply type `quit`.
 
 # OpenRAM
 [OpenRAM] is an award winning open-source Python framework to create the layout, netlists, timing and power models, placement and routing models, and other views necessary to use SRAMs in ASIC design.

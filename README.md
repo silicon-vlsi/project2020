@@ -78,7 +78,14 @@ If you want to edit the file without leaving ngspice, simply type edit eg.
 ```bash
 ngspice 3 -> edit
 ```
-And to quit simply type `quit`.
+**IMPORANT NOTE** While editing inside ngspice, if you make an error, you may lose the netlist file. This maybe a bug in ngspice.
+
+The preferred method of running ngspice is in batch mode:
+```bash
+ngspice -b -r filename.raw -o filename.log input.sp
+```
+
+And to quit, simply type `quit`.
 
 # Technology
 ## MOSIS Scalable CMOS ([SCMOS])
@@ -103,6 +110,7 @@ And to quit simply type `quit`.
 - [ ] Add a NGSpice section with a quickstart guide to this README
 - [ ] Create a customized `Sue` schematic editor and add to repo.
 - [ ] Compile [Magic] in LXLE and add to the repo.
+- [ ] File a bug report with ngspice regarding the file deleting when in edit mode.
 
 * * *
 

@@ -51,7 +51,7 @@ project2020/eda/ngspice-32
 └── models                     (Spice models)
 ```
 
-## Quick Start Guide
+### Quick Start Guide
 You can open a text editor create a *netlist* of the intended circuit for example of a voltage divider as shown below (say filename `divider.sp`):
 ```spice
 First line in ngspice is always the title line
@@ -79,6 +79,15 @@ If you want to edit the file without leaving ngspice, simply type edit eg.
 ngspice 3 -> edit
 ```
 And to quit simply type `quit`.
+
+# Technology
+## MOSIS Scalable CMOS ([SCMOS])
+[SCMOS] is a *lambda-based* scalable design rules that can be interfaced to many CMOS fabrication process available at MOSIS. **NOTE** The scalable design rules does not interface with Fabs now because of lot unique process nuances.
+
+- The Spice model files are located at `<PATH-TO-REPO>/project2020/eda/ngspice-32/models/scn4m_subm`
+- Typical MOS parameters:
+  - **NMOS**: tox=7.6nm, nch=1.7e17/cm^3, Vt0=0.49V, un(mobility)=445 cm^2/Vs
+  - **PMOS**: tox=7.6nm, nch=1.7e17/cm^3, Vt0=-0.66V, up(mobility)=151 cm^2/Vs
 
 # OpenRAM
 [OpenRAM] is an award winning open-source Python framework to create the layout, netlists, timing and power models, placement and routing models, and other views necessary to use SRAMs in ASIC design.

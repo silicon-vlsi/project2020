@@ -1,8 +1,6 @@
 # Table of Contents 
 - [Overview](#Overview)
-- [Install/Setup](#Installation-Setup)
     - [Cloning the Repo](#Cloning-the-Repository)
-    - [Setting the Environment Variables](#Setting-the-Environment-Variables)
     - [Suggested Directory Structure](#Suggested-Directory-Structure)
 - [NGSpice](#NGSpice)
 - [OpenRAM](#OpenRAM)
@@ -12,19 +10,10 @@
 
 This is the repository for the VLSI Project 2020. This repo contains the eda tools, Labs, assignments, docs, etc. related to the project.
 
-# Installation Setup
-
 ## Cloning the Repository
 ```bash
 git clone https://www.github.com/silicon-vlsi/project2020
 ```
-
-## Setting the Environment Variables
-Add the following in ```~/.bashrc```
-```bash
-export PATH=$PATH:<PATH-TO-REPO>/project2020/eda/ngspice-32/glnxa64/bin
-```
-
 ## Suggested Directory Structure
 ```bash
 <HOME_DIR> [eg. /home/vlsi]
@@ -36,7 +25,14 @@ export PATH=$PATH:<PATH-TO-REPO>/project2020/eda/ngspice-32/glnxa64/bin
 ```
 
 # NGSpice
-[NGSpice] is a open source spice simulator for electric and electronic circuits. After cloning this repo, a precompiled version (compiled in 64-bit LXLE/Ubuntu) will be available in `<PATH-TO-REPO>/project2020/eda/ngspice-32`. Add the following environment variables
+[NGSpice] is a open source spice simulator for electric and electronic circuits. After cloning this repo, a precompiled version (compiled in 64-bit LXLE/Ubuntu) will be available in `<PATH-TO-REPO>/project2020/eda/ngspice-32`. Add the following environment variables in your `~/.bashrc`
+```bash
+export  SPICE_LIB_DIR=$HOME/projects/project2020/eda/ngspice-32/glnxa64/share/ngspice
+export  SPICE_EXEC_DIR=$HOME/projects/project2020/eda/ngspice-32/glnxa64/bin
+export  PATH=$PATH:$SPICE_EXEC_DIR
+```
+There is a initialization script in `$SPICE_LIB_DIR/scripts/spinit`. You can overwrite any of the initilization by adding commands to a local `~/.spiceinit` .
+
 
 # OpenRAM
 [OpenRAM] is an award winning open-source Python framework to create the layout, netlists, timing and power models, placement and routing models, and other views necessary to use SRAMs in ASIC design.

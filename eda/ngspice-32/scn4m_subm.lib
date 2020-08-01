@@ -1,0 +1,22 @@
+*****scn4m_subm-model-library******
+
+*simultor: ngspice
+*process : scn4m_subm
+      
+
+.lib nom
+.include './models/scn4m_subm/mos/nom_nmos.sp'
+.include './models/scn4m_subm/mos/nom_pmos.sp'
+.endl
+
+.lib ff
+.include './models/scn4m_subm/mos/ff_nmos.sp'
+.include './models/scn4m_subm/mos/ff_pmos.sp'
+.endl
+
+.lib ss
+.include './models/scn4m_subm/mos/ss_nmos.sp'
+.include './models/scn4m_subm/mos/ss_pmos.sp'
+.endl           
+
+

@@ -1,0 +1,21 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+## Environment variables for NGSpice
+export  SPICE_LIB_DIR=$HOME/project2020/eda/ngspice-32/glnxa64/share/ngspice
+export  SPICE_EXEC_DIR=$HOME/project2020/eda/ngspice-32/glnxa64/bin
+export PATH=$PATH:$SPICE_EXEC_DIR
+
+## Environment variables for CppSimLite
+export CPPSIMHOME=$HOME/project2020/eda/CppSimLite
+export CPPSIMSHAREDHOME=$CPPSIMHOME/CppSimShared
+### EDITOR is required to create or modify files from Sue2
+export EDITOR=/usr/bin/vim
+# Set the PATH for NGSpice and CppSimLite binaries
+export PATH=$PATH:$CPPSIMSHAREDHOME/bin:$SPICE_EXEC_DIR
+
+

@@ -6,6 +6,7 @@
     - [QuickStart Guide](#Quick-Start-Guide)
 - [CppSimLite](#CppSimLite)
     - [Sue2](#Sue2)
+- [Technology](#Technology)
 - [OpenRAM](#OpenRAM)
 - [Tasks](#Tasks)
 
@@ -158,8 +159,8 @@ sue2
 - [x] Install LXLE on Virtual Box
 - [x] Compile ngspice-32 on LXLE and add to the repo.
 - [x] Add the [SCMOS] spice models to the ngspice directory.
-- [ ] Add a NGSpice section with a quickstart guide to this README
-- [ ] Create a customized `Sue` schematic editor and add to repo.
+- [x] Add a NGSpice section with a quickstart guide to this README
+- [x] Create a customized `Sue` schematic editor and add to repo.
 - [ ] Compile [Magic] in LXLE and add to the repo.
 - [ ] File a bug report with ngspice regarding the file deleting when in edit mode.
 

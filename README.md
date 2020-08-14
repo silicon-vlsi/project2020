@@ -120,7 +120,7 @@ CppSimLite
 - Setting the Environment Variables in `~/.bashrc`
 
 ```bash
-export CPPSIMHOME=$HOME/projec2020/eda/CppSimLite
+export CPPSIMHOME=$HOME/project2020/eda/CppSimLite
 export CPPSIMSHAREDHOME=$CPPSIMHOME/CppSimShared
 export EDITOR=/usr/bin/vim
 export PATH=$PATH:$CPPSIMSHAREDHOME/bin

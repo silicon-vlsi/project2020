@@ -6,6 +6,8 @@
     - [QuickStart Guide](#Quick-Start-Guide)
 - [CppSimLite](#CppSimLite)
     - [Sue2](#Sue2)
+- [Magic](#Magic)
+- [Netgen](#Netgen)
 - [Technology](#Technology)
 - [OpenRAM](#OpenRAM)
 - [Tasks](#Tasks)

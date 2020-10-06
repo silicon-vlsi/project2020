@@ -162,6 +162,10 @@ Netgen is currently maintained by Tim Edwards (opencircuitdesign.com/netgen)
   - **PMOS**: tox=7.6nm, nch=1.7e17/cm^3, Vt0=-0.66V, up(mobility)=151 cm^2/Vs
   - Vdd=5V, Lmin=0.4um, Wmin=0.6um
 
+## Skywater 130nm PDK
+- https://www.github.com/google/skywater-pdk
+- https://skywater-pdk.readthedocs.io/en/latest/
+
 # OpenRAM
 [OpenRAM] is an award winning open-source Python framework to create the layout, netlists, timing and power models, placement and routing models, and other views necessary to use SRAMs in ASIC design.
 

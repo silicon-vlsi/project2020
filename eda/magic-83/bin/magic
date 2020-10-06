@@ -37,12 +37,12 @@ done
 if [ $TKCON ]; then
 
    if [ $DNULL ]; then
-      exec /home/vlsi/tools/magic-83/lib/magic/tcl/tkcon.tcl -eval "source /home/vlsi/tools/magic-83/lib/magic/tcl/console.tcl" \
-	   -slave "set argc $#; set argv [list $*]; source /home/vlsi/tools/magic-83/lib/magic/tcl/magic.tcl"
+      exec $MAGIC_HOME/lib/magic/tcl/tkcon.tcl -eval "source $MAGIC_HOME/lib/magic/tcl/console.tcl" \
+	   -slave "set argc $#; set argv [list $*]; source $MAGIC_HOME/lib/magic/tcl/magic.tcl"
    else
-      exec /home/vlsi/tools/magic-83/lib/magic/tcl/tkcon.tcl -eval "source /home/vlsi/tools/magic-83/lib/magic/tcl/console.tcl" \
+      exec $MAGIC_HOME/lib/magic/tcl/tkcon.tcl -eval "source $MAGIC_HOME/lib/magic/tcl/console.tcl" \
 	   -slave "package require Tk; set argc $#; set argv [list $arglist]; \
-	   source /home/vlsi/tools/magic-83/lib/magic/tcl/magic.tcl"
+	   source $MAGIC_HOME/lib/magic/tcl/magic.tcl"
    fi
 
 else
@@ -57,8 +57,8 @@ else
 # only, efficient for running in batch mode).
 #
    if [ $DNULL ]; then
-      exec /home/vlsi/tools/magic-83/lib/magic/tcl/magicdnull -nowrapper "$@"
+      exec $MAGIC_HOME/lib/magic/tcl/magicdnull -nowrapper "$@"
    else
-      exec /home/vlsi/tools/magic-83/lib/magic/tcl/magicexec -- "$@"
+      exec $MAGIC_HOME/lib/magic/tcl/magicexec -- "$@"
    fi
 fi

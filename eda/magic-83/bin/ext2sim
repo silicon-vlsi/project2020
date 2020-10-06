@@ -15,7 +15,7 @@ for i in $@; do
    esac
 done
 #
-eval /home/vlsi/tools/magic-83/lib/magic/tcl/magicdnull -dnull -noconsole -nowrapper $mgargs <<EOF
+eval $MAGIC_HOME/lib/magic/tcl/magicdnull -dnull -noconsole -nowrapper $mgargs <<EOF
 drc off
 box 0 0 0 0
 ext2sim $esargs

@@ -1,19 +1,20 @@
 # Wishrc startup for ToolScript (magic)
 #
 # For installation:  Put this file and also magicwrap.so into
-# directory /home/vlsi/tools/magic-83/lib/magic/tcl, and set the "load" line below
+# directory $MAGIC_HOME/lib/magic/tcl, and set the "load" line below
 # to point to the location of magicwrap.so.  Also see comments
 # in shell script "magic.sh".
 
 global Opts
-  
+set MAGIC_HOME $::env(MAGIC_HOME)
+
 # If we called magic via the non-console script, then we want to reset
 # the environment variable HOME to its original value.
    
 if {${tcl_version} >= 8.6} {
-   load -lazy /home/vlsi/tools/magic-83/lib/magic/tcl/tclmagic.so
+   load -lazy $MAGIC_HOME/lib/magic/tcl/tclmagic.so
 } else {
-   load /home/vlsi/tools/magic-83/lib/magic/tcl/tclmagic.so
+   load $MAGIC_HOME/lib/magic/tcl/tclmagic.so
 }
 
 # It is important to make sure no magic commands overlap with Tcl built-in

@@ -143,8 +143,9 @@ sue2
 [Magic] is the most popular open-source Layout tool written in the 1980's at Berkeley by John Ousterhout (now famous for writing scripting languuage Tcl) and now maintained by Tim Edwards (opencircuitdesign.com/magic).\\
 
 **Setting Up the Environment Variables**
+**NOTE**: The below is path is an example. Just make sure it matches your particular path.
 ```bash
-export MAGIC_HOME=/home/vlsi/tools/magic-83
+export MAGIC_HOME=/home/user/projects/project2020/eda/magic-83
 export PATH=$PATH:$MAGIC_HOME/bin
 ```
 

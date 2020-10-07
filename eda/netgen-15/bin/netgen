@@ -11,6 +11,11 @@
 
 # Parse for the argument "-c[onsole]".  If it exists, run netgen
 # with the TkCon console.  Strip this argument from the argument list.
+#
+# ------------------------------
+# hardcoded dirs eg. /home/vlsi/tools were replaced with $NETGEN_HOME
+# so other users can copy the install directory and get it working.
+# 10/07/2020 -srout
 
 TKCON=true
 BATCH=
@@ -37,15 +42,15 @@ done
 
 if [ $TKCON ]; then
 
-   exec /home/vlsi/tools/netgen-15/lib/netgen/tcl/tkcon.tcl \
-	-eval "source /home/vlsi/tools/netgen-15/lib/netgen/tcl/console.tcl" \
+   exec $NETGEN_HOME/lib/netgen/tcl/tkcon.tcl \
+	-eval "source $NETGEN_HOME/lib/netgen/tcl/console.tcl" \
 	-slave "package require Tk; set argc $#; set argv [list $arglist]; \
-	source /home/vlsi/tools/netgen-15/lib/netgen/tcl/netgen.tcl"
+	source $NETGEN_HOME/lib/netgen/tcl/netgen.tcl"
 
 # Run the Python LVS manager GUI
 
 elif [ $GUI ]; then
-    exec /home/vlsi/tools/netgen-15/lib/netgen/python/lvs_manager.py $@
+    exec $NETGEN_HOME/lib/netgen/python/lvs_manager.py $@
 
 #
 # Run the stand-in for wish (netgenexec), which acts exactly like "wish"
@@ -55,6 +60,6 @@ elif [ $GUI ]; then
 #
 
 else
-   exec /home/vlsi/tools/netgen-15/lib/netgen/tcl/netgenexec -- "$@"
+   exec $NETGEN_HOME/lib/netgen/tcl/netgenexec -- "$@"
 
 fi

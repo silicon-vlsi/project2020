@@ -6,6 +6,10 @@
 # in shell script "magic.sh".
 
 global Opts
+# This this script is sourced from bin/magic, env(MAGIC_HOME)
+# is not passed so the following stmnt added to pass the env var
+# also all hard-coded dirs (eg. /home/vlsi/tools/...) were replaced
+# with $MAGIC_HOME
 set MAGIC_HOME $::env(MAGIC_HOME)
 
 # If we called magic via the non-console script, then we want to reset

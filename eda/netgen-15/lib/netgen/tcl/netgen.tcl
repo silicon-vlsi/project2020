@@ -6,6 +6,12 @@
 # in shell script "netgen.sh".
 #
 
+# This this script is sourced from bin/netgen, env(NETGEN_HOME)
+# is not passed so the following stmnt added to pass the env var
+# also all hard-coded dirs (eg. /home/vlsi/tools/...) were replaced
+# with $NETGEN_HOME
+set NETGEN_HOME $::env(NETGEN_HOME)
+
 # Check namespaces for existence of other applications
 set UsingMagic 0
 set UsingXCircuit 0
@@ -21,9 +27,9 @@ foreach i $nlist {
 }
 
 # -lazy option not needed if stubs libraries are handled correctly
-# load -lazy /home/vlsi/tools/netgen-15/lib/netgen/tcl/tclnetgen.so
+# load -lazy $NETGEN_HOME/lib/netgen/tcl/tclnetgen.so
 
-load /home/vlsi/tools/netgen-15/lib/netgen/tcl/tclnetgen.so
+load $NETGEN_HOME/lib/netgen/tcl/tclnetgen.so
 
 #----------------------------------------------------------------
 # Convert LVS list result into a JSON file 

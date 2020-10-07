@@ -1,0 +1,13 @@
+#localInstall.README
+
+When the magic is installed locally following files have the install directory as absolute paths eg. /home/vlsi/tools/..
+bin/magic
+bin/ext2sim
+bin/ext2spice
+lib/magic/tcl/magic.tcl
+
+So when a user a copies this directory structure in his home or user directory, you get errors for missing files.
+For that purpuse the absolute path is replaced with env variable MAGIC_HOME which the user sets it appropriately.
+
+Morever, since magic.tcl is sourced in bin/netgen, the env var MAGIC_HOME needs to be passed to magic.tcl with the following statement in magic.tcl
+set MAGIC_HOME $::env(MAGIC_HOME)

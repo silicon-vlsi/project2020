@@ -1,0 +1,11 @@
+#localInstall.README
+
+When the netgen is installed locally following files have the install directory as absolute paths eg. /home/vlsi/tools/..
+bin/netgen
+lib/netgen/tcl/netgen.tcl
+
+So when a user a copies this directory structure in his home or user directory, you get errors for missing files.
+For that purpuse the absolute path is replaced with env variable NETGEN_HOME which the user sets it appropriately.
+
+Morever, since netgen.tcl is sourced in bin/netgen, the env var NETGEN_HOME needs to be passed to netgen.tcl with the following statement in netgen.tcl
+set NETGEN_HOME $::env(NETGEN_HOME)

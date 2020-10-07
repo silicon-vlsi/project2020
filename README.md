@@ -146,12 +146,19 @@ sue2
 **NOTE**: The below is path is an example. Just make sure it matches your particular path.
 ```bash
 export MAGIC_HOME=/home/user/projects/project2020/eda/magic-83
+export CAD_ROOT=$MAGIC_HOME/lib
 export PATH=$PATH:$MAGIC_HOME/bin
 ```
 
 # Netgen
 [Netgen] is a tool for comparing netlists, a process known as LVS, which stands for "Layout vs. Schematic". This is an important step in the integrated circuit design flow, ensuring that the geometry that has been laid out matches the expected circuit.
 Netgen is currently maintained by Tim Edwards (opencircuitdesign.com/netgen)
+**Setting Up the Environment Variables**
+**NOTE**: The below is path is an example. Just make sure it matches your particular path.
+```bash
+export NETGEN_HOME=/home/user/projects/project2020/eda/netgen-15
+export PATH=$PATH:$NETGEN_HOME/bin
+```
 
 # Technology
 ## MOSIS Scalable CMOS ([SCMOS])
